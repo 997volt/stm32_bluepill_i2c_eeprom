@@ -89,7 +89,10 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
-
+  uint8_t test = 0x55;
+  HAL_I2C_Mem_Write(&hi2c2, 0xa0, 0x10, 1, (uint8_t*)&test, sizeof(test), HAL_MAX_DELAY);
+  uint8_t result;
+  HAL_I2C_Mem_Read(&hi2c2, 0xa0, 0x10, 1, &result, 1, HAL_MAX_DELAY);
   /* USER CODE END 2 */
 
   /* Infinite loop */

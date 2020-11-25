@@ -1,10 +1,10 @@
-# stm32_bluepill_template
+# stm32_bluepill_i2c_eeprom
 
 I2C communication with 24AA01 Serial EEPROM.
 
 Chip datasheet - http://ww1.microchip.com/downloads/en/DeviceDoc/21711J.pdf
 
-Created in STM32CubeIDE for STM32Duino "Blue Pill" HW-267 based on STM32F103CBT6 MCU. 
+Created in STM32CubeIDE for STM32 "Blue Pill" HW-267 based on STM32F103CBT6 MCU. 
 
 ### To run/modify this project locally:
 
